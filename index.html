@@ -361,167 +361,52 @@
     <!-- Blog End -->
 
 
-    <!-- Contact Start -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #ffffff;
-        }
-
-        .contact-section {
-            width: 100%;
-            max-width: 730px;
-            margin: 50px auto;
-            text-align: center;
-            position: relative;
-        }
-
-        .contact-section::before {
-            content: "CONTACT";
-            position: absolute;
-            top: -45px;
-            left: 0;
-            width: 100%;
-            font-size: 82px;
-            font-weight: bold;
-            color: rgba(180, 245, 250, 0.35);
-            z-index: -1;
-        }
-
-        h2 {
-            color: #218c25;
-            font-size: 40px;
-            margin-bottom: 80px;
-        }
-
-        .row {
-            display: flex;
-            gap: 10px;
-        }
-
-        input,
-        textarea {
-            width: 100%;
-            border: 1px solid #d5d5d5;
-            border-radius: 30px;
-            padding: 15px 24px;
-            font-size: 16px;
-            outline: none;
-            font-family: Arial, sans-serif;
-        }
-
-        input {
-            height: 52px;
-        }
-
-        .full {
-            margin-top: 15px;
-        }
-
-        textarea {
-            height: 155px;
-            resize: vertical;
-            border-radius: 25px;
-        }
-
-        /* Excel Link */
-        .excel-link {
-            display: inline-block;
-            margin-top: 15px;
-            color: #218c25;
-            text-decoration: none;
-            font-size: 15px;
-            font-weight: 600;
-        }
-
-        .excel-link:hover {
-            text-decoration: underline;
-        }
-
-        button {
-            margin-top: 18px;
-            padding: 13px 28px;
-            border: 1px solid #20bfa9;
-            background: white;
-            color: #20bfa9;
-            border-radius: 30px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background: #20bfa9;
-            color: white;
-        }
-
-        @media (max-width: 600px) {
-            .contact-section {
-                width: 90%;
-            }
-
-            .row {
-                flex-direction: column;
-            }
-
-            .contact-section::before {
-                font-size: 55px;
-            }
-
-            h2 {
-                font-size: 32px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <section class="contact-section">
-
-        <h2>CONTACT ME</h2>
-
-        <form>
-
-            <div class="row">
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email">
+        <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
             </div>
-
-            <input class="full" type="text" placeholder="Subject">
-
-            <textarea class="full" placeholder="Message"></textarea>
-
-            <!-- Excel File Link -->
-            <a 
-                href="https://docs.google.com/spreadsheets/d/1K6fUTlWcDsP9mamznh2M6KsuVaOzfGQq/edit?usp=sharing&ouid=116265426985612968988&rtpof=true&sd=true" 
-                target="_blank" 
-                class="excel-link">
-                📊 View / Download Excel File
-            </a>
-
-            <br>
-
-            <button type="submit">Send Message</button>
-
-        </form>
-
-    </section>
-
-</body>
-</html>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                       
+					   <form id="" action="" name="contactme" >
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="name" name="name" placeholder="Your Name"
+                                        required="required" data-validation-required-message="Please enter your name" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" id="email" name="email" placeholder="Your Email"
+                                        required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" name="subject" placeholder="Subject"
+                                    required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" name="message" placeholder="Message"
+                                    required="required"
+                                    data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-primary" type="submit" id="SendMessageButton">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
     <!-- Contact End -->
 
 
@@ -539,7 +424,7 @@
 <a class="btn btn-light btn-social mr-2" href="https://github.com/bhattacharjee1222?tab=repositories">
     <i class="fab fa-github"></i>
 </a>
-<a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/sukanta-bhattacharjee-a93726246?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+<a class="btn btn-light btn-social mr-2" href="https://docs.google.com/spreadsheets/d/1K6fUTlWcDsP9mamznh2M6KsuVaOzfGQq/edit?usp=sharing&ouid=116265426985612968988&rtpof=true&sd=true">
     <i class="fab fa-linkedin-in"></i>
 </a>
              
